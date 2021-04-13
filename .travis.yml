@@ -12,7 +12,7 @@ dist: focal
 install: 
   # C++17
   - sudo apt-get install -y g++
-  - sudo update-alternatives --install /usr/bin/g++ g++ 90
+#  - sudo update-alternatives --install /usr/bin/g++ g++ 90
 
 script: 
   - g++ main.cpp -DNDEBUG -O2 -pg -std=c++17 -o travis_gcc_cpp17_gprof
